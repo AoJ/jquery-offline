@@ -111,7 +111,7 @@ if( $.support.localStorage ) {
     });
   });
   
-  asyncTest("if you return false, it doesn't make an Ajax request", function() {
+  asyncTest("if you return false, it will return a jQuery.Defered().promise object", function() {
     // Use an expectation assertion here to confirm that the Ajax request
     // doesn't run. If it did, we would have two more assertions.
     expect(3);
